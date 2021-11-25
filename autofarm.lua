@@ -554,7 +554,7 @@ local threadOption = optionsSection:AddTextbox({
     opts.threadCount = tonumber(value)
     print("Threads set to " .. opts.threadCount)
   end,
-  Lines = false
+  Lines = false,
   Type = "number",
   PreFormat = function (value)
     -- format the value to show the number of threads as humanly as posible
